@@ -1,0 +1,32 @@
+.about__legal-strip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.875rem;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: 1.1rem 1.4rem;
+    margin-top: 3rem;
+}
+
+.about__legal-item {
+    font-size: 0.76rem;
+    color: var(--text-muted);
+}
+
+.about__thesis {
+    max-width: 700px;
+}
+
+@media (max-width: 900px) {
+    .about__legal-strip {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .about__legal-strip {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+    }
+}
